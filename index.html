@@ -12,6 +12,12 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Blog preview card</title>
   </head>
@@ -23,14 +29,23 @@
           alt="illustration article"
           class="card__image"
         />
-        <p>Learning</p>
-        <p>Published 21 Dec 2023</p>
-        <h1>HTML & CSS foundations</h1>
-        <h2>
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </h2>
-        <p>Greg Hooper</p>
+        <div class="card__content">
+          <p class="card__tag">Learning</p>
+          <p class="card__create">Published 21 Dec 2023</p>
+          <h1>HTML & CSS foundations</h1>
+          <h2 class="card__description">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </h2>
+        </div>
+        <div class="card__footer">
+          <img
+            src="./assets/images/image-avatar.webp"
+            alt="avatar"
+            class="footer__img"
+          />
+          <p>Greg Hooper</p>
+        </div>
       </article>
     </main>
   </body>
