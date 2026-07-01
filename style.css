@@ -67,6 +67,15 @@ h2 {
   font-weight: 500;
 }
 
+.card__link {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card__link:hover {
+  color: hsl(47, 88%, 63%);
+}
+
 .card__description {
   color: hsl(0, 0%, 42%);
 }
