@@ -27,16 +27,11 @@ h1 {
   font-weight: 800;
 }
 
-h2 {
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .card {
   display: flex;
   flex-direction: column;
-  height: 522px;
-  width: 384px;
+  max-height: 522px;
+  max-width: 384px;
   padding: 24px;
   gap: 24px;
   background-color: hsl(0, 0%, 100%);
@@ -63,30 +58,33 @@ h2 {
   background-color: hsl(47, 88%, 63%);
 }
 
-.card__create {
+.card__date {
   font-weight: 500;
 }
 
-.card__link {
+.card__title-link {
   text-decoration: none;
   transition: 0.3s;
 }
 
-.card__link:hover {
+.card__title-link:hover,
+.card__title-link:focus-visible {
   color: hsl(47, 88%, 63%);
 }
 
 .card__description {
   color: hsl(0, 0%, 42%);
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.card__footer {
+.card__author {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-.footer__img {
+.card__author--avatar {
   width: 32px;
   height: 32px;
 }
